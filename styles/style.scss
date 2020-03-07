@@ -357,15 +357,15 @@ h4 {
     &_info {
         margin-top: 1.5vh;
         margin-bottom: 4vh;
+    }
 
-        &--product {
-            padding-left: 4vw;
-        }
+    .product {
+        padding-left: 4vw;
+    }
 
-        &--price {
-            padding-right: 4vw;
-            font-weight: 900;
-        }
+    .price {
+        padding-right: 4vw;
+        font-weight: 900;
     }
 
     &_line-h3 {
@@ -429,10 +429,6 @@ h4 {
         margin-bottom: 2vh;
     }
 
-    .info {
-        margin-bottom: 4vh;
-    }
-
     .product {
         padding-left: 10vw;
     }
@@ -442,11 +438,15 @@ h4 {
         padding-right: 10vw;
     }
 
+    &_info {
+        margin-bottom: 4vh;
+    }
+
     .start {
         color: $clrm2-start;
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             background: $clrm2-start;
         }
     }
@@ -454,8 +454,8 @@ h4 {
     .mid {
         color: $clrm2-mid;
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             background: $clrm2-mid;
         }
 
@@ -464,34 +464,30 @@ h4 {
     .end {
         color: $clrm2-end;
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             background: $clrm2-end;
         }
     }
 
-    .line-h3 {
+    &_line-h3 {
         margin-bottom: 2em;
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             content: '';
             position: relative;
             width: 20vw;
             height: 3vh;
-
-            .line-h3 .start {
-                background: $clrm2-start;
-            }
         }
 
-        &::before {
+        &:before {
             margin-left: 2em;
             -webkit-clip-path: polygon(88% 22%, 100% 40%, 88% 55%, 0 43%);
             clip-path: polygon(88% 22%, 100% 40%, 88% 55%, 0 43%);
         }
 
-        &::after {
+        &:after {
             margin-right: 2em;
             -webkit-clip-path: polygon(9% 23%, 100% 39%, 9% 55%, 0% 38%);
             clip-path: polygon(9% 23%, 100% 39%, 9% 55%, 0% 38%);
@@ -499,7 +495,7 @@ h4 {
     }
 }
 
-.meal3 {
+.delice {
     background-color: $colormenu3;
 
     h1 {
@@ -526,7 +522,7 @@ h4 {
         margin-bottom: 2vh;
     }
 
-    .info {
+    &_info {
         margin-top: 4vh;
         margin-bottom: 4vh;
     }
@@ -542,45 +538,45 @@ h4 {
 
     .start {
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             background: $clrm3-start;
         }
     }
 
     .mid {
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             background: $clrm3-mid;
         }
     }
 
     .end {
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             background: $clrm3-end;
         }
     }
 
-    .line-h3 {
+    &_line-h3 {
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             content: '';
             position: relative;
             width: 22vw;
             height: 3vh;
         }
 
-        &::before {
+        &:before {
             margin-left: 3vw;
             -webkit-clip-path: polygon(94% 50%, 97% 62%, 3% 62%, 1% 37%, 11% 50%);
             clip-path: polygon(94% 50%, 97% 62%, 3% 62%, 1% 37%, 11% 50%);
         }
 
-        &::after {
+        &:after {
             margin-right: 3vw;
             -webkit-clip-path: polygon(100% 32%, 97% 62%, 3% 62%, 6% 48%, 87% 48%);
             clip-path: polygon(100% 32%, 97% 62%, 3% 62%, 6% 48%, 87% 48%);
@@ -588,7 +584,7 @@ h4 {
     }
 }
 
-.meal4 {
+.palette {
     background-color: $colormenu4;
 
     h1 {
@@ -615,7 +611,7 @@ h4 {
         margin-bottom: 2vh;
     }
 
-    .info {
+    &_info {
         margin-top: 4vh;
         margin-bottom: 4vh;
     }
@@ -629,7 +625,7 @@ h4 {
         font-weight: 900;
     }
 
-    .line-h3 {
+    &_line-h3 {
 
         &::before,
         &::after {

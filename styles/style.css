@@ -657,22 +657,6 @@ footer .wiggle:hover {
           justify-content: space-between;
 }
 
-.note_info--product,
-.chic_info--product,
-.delice_info--product,
-.palette_info--product {
-  float: left;
-  text-align: start;
-}
-
-.note_info--price,
-.chic_info--price,
-.delice_info--price,
-.palette_info--price {
-  float: right;
-  text-align-last: right;
-}
-
 .note_line-h3,
 .chic_line-h3,
 .delice_line-h3,
@@ -689,15 +673,20 @@ footer .wiggle:hover {
           justify-content: space-between;
 }
 
-.note_line-h3:before, .note_line-h3:after,
-.chic_line-h3:before,
-.chic_line-h3:after,
-.delice_line-h3:before,
-.delice_line-h3:after,
-.palette_line-h3:before,
-.palette_line-h3:after {
-  content: '';
-  position: relative;
+.note .product,
+.chic .product,
+.delice .product,
+.palette .product {
+  float: left;
+  text-align: start;
+}
+
+.note .price,
+.chic .price,
+.delice .price,
+.palette .price {
+  float: right;
+  text-align-last: right;
 }
 
 .note .underline-h3,
@@ -804,11 +793,11 @@ h4 {
   margin-bottom: 4vh;
 }
 
-.note_info--product {
+.note .product {
   padding-left: 4vw;
 }
 
-.note_info--price {
+.note .price {
   padding-right: 4vw;
   font-weight: 900;
 }
@@ -870,10 +859,6 @@ h4 {
   margin-bottom: 2vh;
 }
 
-.chic .info {
-  margin-bottom: 4vh;
-}
-
 .chic .product {
   padding-left: 10vw;
 }
@@ -883,11 +868,15 @@ h4 {
   padding-right: 10vw;
 }
 
+.chic_info {
+  margin-bottom: 4vh;
+}
+
 .chic .start {
   color: #C67412;
 }
 
-.chic .start::before, .chic .start::after {
+.chic .start:before, .chic .start:after {
   background: #C67412;
 }
 
@@ -895,7 +884,7 @@ h4 {
   color: #A56799;
 }
 
-.chic .mid::before, .chic .mid::after {
+.chic .mid:before, .chic .mid:after {
   background: #A56799;
 }
 
@@ -903,42 +892,38 @@ h4 {
   color: #6E4CCC;
 }
 
-.chic .end::before, .chic .end::after {
+.chic .end:before, .chic .end:after {
   background: #6E4CCC;
 }
 
-.chic .line-h3 {
+.chic_line-h3 {
   margin-bottom: 2em;
 }
 
-.chic .line-h3::before, .chic .line-h3::after {
+.chic_line-h3:before, .chic_line-h3:after {
   content: '';
   position: relative;
   width: 20vw;
   height: 3vh;
 }
 
-.chic .line-h3::before .line-h3 .start, .chic .line-h3::after .line-h3 .start {
-  background: #C67412;
-}
-
-.chic .line-h3::before {
+.chic_line-h3:before {
   margin-left: 2em;
   -webkit-clip-path: polygon(88% 22%, 100% 40%, 88% 55%, 0 43%);
   clip-path: polygon(88% 22%, 100% 40%, 88% 55%, 0 43%);
 }
 
-.chic .line-h3::after {
+.chic_line-h3:after {
   margin-right: 2em;
   -webkit-clip-path: polygon(9% 23%, 100% 39%, 9% 55%, 0% 38%);
   clip-path: polygon(9% 23%, 100% 39%, 9% 55%, 0% 38%);
 }
 
-.meal3 {
+.delice {
   background-color: #f9f9f9;
 }
 
-.meal3 h1 {
+.delice h1 {
   font-family: 'Dancing Script';
   font-weight: 300;
   font-size: 4vmax;
@@ -950,68 +935,68 @@ h4 {
   -webkit-text-fill-color: transparent;
 }
 
-.meal3 h3 {
+.delice h3 {
   font-family: 'Segoe Print';
   font-size: 2.7vmin;
   font-weight: 600;
 }
 
-.meal3 li {
+.delice li {
   font-family: 'Segoe Print';
   font-size: 2vmin;
   margin-bottom: 2vh;
 }
 
-.meal3 .info {
+.delice_info {
   margin-top: 4vh;
   margin-bottom: 4vh;
 }
 
-.meal3 .product {
+.delice .product {
   margin-left: 7vw;
 }
 
-.meal3 .price {
+.delice .price {
   margin-right: 7vw;
   font-weight: 900;
 }
 
-.meal3 .start::before, .meal3 .start::after {
+.delice .start:before, .delice .start:after {
   background: #0228DD;
 }
 
-.meal3 .mid::before, .meal3 .mid::after {
+.delice .mid:before, .delice .mid:after {
   background: #0670F3;
 }
 
-.meal3 .end::before, .meal3 .end::after {
+.delice .end:before, .delice .end:after {
   background: #229DF9;
 }
 
-.meal3 .line-h3::before, .meal3 .line-h3::after {
+.delice_line-h3:before, .delice_line-h3:after {
   content: '';
   position: relative;
   width: 22vw;
   height: 3vh;
 }
 
-.meal3 .line-h3::before {
+.delice_line-h3:before {
   margin-left: 3vw;
   -webkit-clip-path: polygon(94% 50%, 97% 62%, 3% 62%, 1% 37%, 11% 50%);
   clip-path: polygon(94% 50%, 97% 62%, 3% 62%, 1% 37%, 11% 50%);
 }
 
-.meal3 .line-h3::after {
+.delice_line-h3:after {
   margin-right: 3vw;
   -webkit-clip-path: polygon(100% 32%, 97% 62%, 3% 62%, 6% 48%, 87% 48%);
   clip-path: polygon(100% 32%, 97% 62%, 3% 62%, 6% 48%, 87% 48%);
 }
 
-.meal4 {
+.palette {
   background-color: #fdfffd;
 }
 
-.meal4 h1 {
+.palette h1 {
   font-family: 'Kaushan Script';
   font-weight: 300;
   font-size: 4vmax;
@@ -1023,40 +1008,40 @@ h4 {
   -webkit-text-fill-color: transparent;
 }
 
-.meal4 h3 {
+.palette h3 {
   font-family: 'Segoe Print';
   font-size: 2.7vmin;
   font-weight: 600;
 }
 
-.meal4 li {
+.palette li {
   font-family: 'Segoe Print';
   font-size: 2vmin;
   margin-bottom: 2vh;
 }
 
-.meal4 .info {
+.palette_info {
   margin-top: 4vh;
   margin-bottom: 4vh;
 }
 
-.meal4 .product {
+.palette .product {
   margin-left: 7vw;
 }
 
-.meal4 .price {
+.palette .price {
   margin-right: 7vw;
   font-weight: 900;
 }
 
-.meal4 .line-h3::before, .meal4 .line-h3::after {
+.palette_line-h3::before, .palette_line-h3::after {
   content: '';
   position: relative;
   width: 22vw;
   height: 3vh;
 }
 
-.meal4 .line-h3::before {
+.palette_line-h3::before {
   margin-left: 5vw;
   background: #047717;
   background: -webkit-gradient(linear, left top, right top, from(#42963D), color-stop(#7DC85D), to(#BEFF7F));
@@ -1065,7 +1050,7 @@ h4 {
   clip-path: polygon(0 38%, 19% 45%, 41% 42%, 63% 44%, 83% 39%, 100% 41%, 100% 59%, 78% 52%, 66% 60%, 44% 59%, 21% 56%, 0 60%);
 }
 
-.meal4 .line-h3::after {
+.palette_line-h3::after {
   margin-right: 5vw;
   background: #aef3be;
   background: -webkit-gradient(linear, left top, right top, from(#BEFF7F), color-stop(#7DC85D), to(#42963D));

@@ -39,29 +39,23 @@
     &_info {
         display: flex;
         justify-content: space-between;
-    &--product {
-        float: left;
-        text-align: start;
     }
-
-    &--price {
-        float: right;
-        text-align-last: right;
-    }
-}
-
     &_line-h3 {
         display: inline-flex;
         text-align: center;
         align-items: center;
         justify-content: space-between;
-
-        &:before,
-        &:after {
-            content: '';
-            position: relative;
-        }
     }
+    .product {
+        float: left;
+        text-align: start;
+    }
+
+    .price {
+        float: right;
+        text-align-last: right;
+    }
+    
 /* Soulignement titres entrées/plats/desserts */
     .underline-h3 {
         text-decoration: none;
