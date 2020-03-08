@@ -193,13 +193,14 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #579C87;
+  padding: 3vmin;
 }
 
 header h1 {
   color: #FDCB46;
   font-family: 'Montserrat';
-  font-size: 4vmax;
-  font-weight: 600;
+  font-size: 3.5vmax;
+  font-weight: 700;
   letter-spacing: -0.06em;
 }
 
@@ -258,18 +259,30 @@ footer .wiggle:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  width: 92%;
+  width: 90%;
   height: 90%;
   margin: auto;
-  padding: 1.5vw;
+  margin-top: 2.5vw;
+}
+
+@media (min-width: 1200px) {
+  .menu {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .menu {
+    width: 60%;
+  }
 }
 
 .menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 450px;
-  width: 300px;
+  height: 440px;
+  width: 290px;
   margin: 3vw;
   -webkit-box-shadow: 0 0 10px #a3a1a366;
           box-shadow: 0 0 10px #a3a1a366;
@@ -302,20 +315,13 @@ footer .wiggle:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1800px) {
   .menu__item {
     height: 600px;
-    width: 450px;
+    width: 400px;
   }
   .menu__item a {
     font-size: 1.5em;
-  }
-}
-
-@media (min-width: 1800px) {
-  .menu__item {
-    height: 800px;
-    width: 550px;
   }
 }
 
@@ -621,10 +627,9 @@ footer .wiggle:hover {
           box-shadow: 0 0 10px #a3a1a366;
   margin: auto;
   margin-bottom: 12vh;
-  width: 85vw;
+  width: 80vw;
   height: 100%;
   min-height: 90vh;
-  /* Soulignement titres entrées/plats/desserts */
 }
 
 .note h1,
@@ -689,20 +694,33 @@ footer .wiggle:hover {
   text-align-last: right;
 }
 
-.note .underline-h3,
-.chic .underline-h3,
-.delice .underline-h3,
-.palette .underline-h3 {
+@media (min-width: 1200px) {
+  .note,
+  .chic,
+  .delice,
+  .palette {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 1800px) {
+  .note,
+  .chic,
+  .delice,
+  .palette {
+    width: 60vw;
+  }
+}
+
+/* Soulignement titres entrées/plats/desserts */
+.underline-h3 {
   text-decoration: none;
   display: inline-block;
   position: relative;
   cursor: pointer;
 }
 
-.note .underline-h3:before,
-.chic .underline-h3:before,
-.delice .underline-h3:before,
-.palette .underline-h3:before {
+.underline-h3:before {
   content: '';
   height: 3px;
   width: 0;
@@ -713,25 +731,12 @@ footer .wiggle:hover {
   bottom: 0;
 }
 
-.note .underline-h3:hover:before,
-.chic .underline-h3:hover:before,
-.delice .underline-h3:hover:before,
-.palette .underline-h3:hover:before {
+.underline-h3:hover:before {
   width: 100%;
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
   background: -webkit-gradient(linear, right top, left top, from(#efff92), to(#0af0be));
   background: linear-gradient(to left, #efff92, #0af0be);
-}
-
-@media (min-width: 1200px) {
-  .note,
-  .chic,
-  .delice,
-  .palette {
-    width: 70vw;
-    height: 100%;
-  }
 }
 
 h4 {
