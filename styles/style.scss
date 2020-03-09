@@ -108,10 +108,10 @@ footer {
 
     @include breakpoint(big-desktop){
         height: 600px;
-        width: 400px;
+        width: 420px;
 
         a {
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
     }
     display: flex;
@@ -297,9 +297,6 @@ footer {
     @include boxmeal;
 
     @include breakpoint(desktop) {
-        width: 70vw;
-    }
-    @include breakpoint(big-desktop) {
         width: 60vw;
     }
 }
@@ -344,8 +341,8 @@ h4 {
     h1 {
         font-family: 'Devonshire';
         font-weight: 300;
-        margin-bottom: 3vh;
-        font-size: 6vmin;
+        margin-bottom: 2vh;
+        font-size: 5vmin;
     }
 
     h2 {
@@ -353,24 +350,24 @@ h4 {
         font-family: 'Devonshire';
         font-weight: 300;
         font-size: 4vmin;
-        margin-bottom: 2vh;
+        margin-bottom: 2.5vh;
     }
 
     h3 {
         font-weight: 900;
         font-family: 'Segoe Print', sans-serif;
-        font-size: 3vmin;
+        font-size: 2.7vmin;
     }
 
     li {
         margin-bottom: 1vh;
         font-family: 'Segoe Print';
-        font-size: 2vmin;
+        font-size: 1.9vmin;
     }
 
     .top.fas {
-        font-size: 9vmin;
-        margin-top: 4vh;
+        font-size: 7vmin;
+        margin-top: 2.5vh;
     }
 
     .fas {
@@ -383,15 +380,15 @@ h4 {
 
     &_info {
         margin-top: 1.5vh;
-        margin-bottom: 4vh;
+        margin-bottom: 2.5vh;
     }
 
     .product {
-        padding-left: 4vw;
+        padding-left: 6vw;
     }
 
     .price {
-        padding-right: 4vw;
+        padding-right: 6vw;
         font-weight: 900;
     }
 
@@ -401,12 +398,12 @@ h4 {
         &:after {
             content: '';
             position: relative;
-            width: 20vw;
+            width: 16vw;
             height: 2vh;
         }
 
         &:before {
-            margin-left: 4vw;
+            margin-left: 6vw;
             background: #3d171d;
             background: -webkit-gradient(linear, left top, right top, from(#3d171d), to(#584727));
             background: linear-gradient(to right, #3d171d, #584727);
@@ -415,7 +412,7 @@ h4 {
         }
 
         &:after {
-            margin-right: 4vw;
+            margin-right: 6vw;
             background: #584727;
             background: -webkit-gradient(linear, left top, right top, from(#584727), to(#3d171d));
             background: linear-gradient(to right, #584727, #3d171d);
@@ -442,7 +439,7 @@ h4 {
     }
 
     h3 {
-        font-size: 2.5vmin;
+        font-size: 2.2vmin;
         font-weight: 600;
     }
 
@@ -452,8 +449,8 @@ h4 {
     }
 
     li {
-        font-size: 2vmin;
-        margin-bottom: 2vh;
+        font-size: 1.9vmin;
+        margin-bottom: 1.5vh;
     }
 
     .product {
@@ -466,7 +463,7 @@ h4 {
     }
 
     &_info {
-        margin-bottom: 4vh;
+        margin-bottom: 5vh;
     }
 
     .start {
@@ -498,13 +495,12 @@ h4 {
     }
 
     &_line-h3 {
-        margin-bottom: 2em;
-
+        margin-bottom: 3vh;
         &:before,
         &:after {
             content: '';
             position: relative;
-            width: 20vw;
+            width: 18vw;
             height: 3vh;
         }
 
@@ -539,13 +535,13 @@ h4 {
 
     h3 {
         font-family: 'Segoe Print';
-        font-size: 2.7vmin;
+        font-size: 2.2vmin;
         font-weight: 600;
     }
 
     li {
         font-family: 'Segoe Print';
-        font-size: 2vmin;
+        font-size: 1.9vmin;
         margin-bottom: 2vh;
     }
 
@@ -555,11 +551,11 @@ h4 {
     }
 
     .product {
-        margin-left: 7vw;
+        margin-left: 8vw;
     }
 
     .price {
-        margin-right: 7vw;
+        margin-right: 8vw;
         font-weight: 900;
     }
 
@@ -593,7 +589,7 @@ h4 {
         &:after {
             content: '';
             position: relative;
-            width: 22vw;
+            width: 18vw;
             height: 3vh;
         }
 
@@ -617,7 +613,7 @@ h4 {
     h1 {
         font-family: 'Kaushan Script';
         font-weight: 300;
-        font-size: 4vmax;
+        font-size: 5vmin;
         margin-top: 5vh;
         margin-bottom: 4vh;
         background: -webkit-linear-gradient(left, $clrm4-start, $clrm4-mid, $clrm4-end);
@@ -628,13 +624,13 @@ h4 {
 
     h3 {
         font-family: 'Segoe Print';
-        font-size: 2.7vmin;
+        font-size: 2.3vmin;
         font-weight: 600;
     }
 
     li {
         font-family: 'Segoe Print';
-        font-size: 2vmin;
+        font-size: 1.9vmin;
         margin-bottom: 2vh;
     }
 
@@ -644,11 +640,11 @@ h4 {
     }
 
     .product {
-        margin-left: 7vw;
+        margin-left: 8vw;
     }
 
     .price {
-        margin-right: 7vw;
+        margin-right: 8vw;
         font-weight: 900;
     }
 
@@ -658,7 +654,7 @@ h4 {
         &::after {
             content: '';
             position: relative;
-            width: 22vw;
+            width: 18vw;
             height: 3vh;
         }
 
