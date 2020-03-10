@@ -408,7 +408,7 @@ footer .wiggle:hover {
 
 .menu__item--chic .menu-title {
   font-family: 'Croissant one', cursive, sans-serif;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: lighter;
   background: -webkit-linear-gradient(left, #C67412, #A56799, #6E4CCC);
   background-clip: text;
@@ -452,7 +452,7 @@ footer .wiggle:hover {
 
 .menu__item--delice .menu-title {
   font-family: 'Dancing Script', cursive, sans-serif;
-  font-size: 2em;
+  font-size: 1.7em;
   font-weight: lighter;
   background: -webkit-linear-gradient(left, #0228DD, #0670F3, #229DF9);
   background-clip: text;
@@ -498,7 +498,7 @@ footer .wiggle:hover {
 
 .menu__item--palette .menu-title {
   font-family: 'Kaushan Script';
-  font-size: 2em;
+  font-size: 1.7em;
   font-weight: lighter;
   background: -webkit-linear-gradient(left, #42963D, #7DC85D, #BEFF7F);
   background-clip: text;
