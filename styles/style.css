@@ -228,8 +228,8 @@ footer a {
 }
 
 footer .wiggle:hover {
-  -webkit-animation: 80ms linear 3 wiggle;
-          animation: 80ms linear 3 wiggle;
+  -webkit-animation: wiggle 80ms linear 3;
+          animation: wiggle 80ms linear 3;
 }
 
 /*** Page d'accueil ***/
