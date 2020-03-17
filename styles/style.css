@@ -357,7 +357,6 @@ footer .wiggle:hover {
 .menu__item--note .fas {
   font-size: 2em;
   background: -webkit-linear-gradient(left, #F15861, #F78F6A);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -392,7 +391,6 @@ footer .wiggle:hover {
   font-size: 1.2em;
   font-weight: lighter;
   background: -webkit-linear-gradient(left, #C67412, #A56799, #6E4CCC);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -432,7 +430,6 @@ footer .wiggle:hover {
   font-size: 1.7em;
   font-weight: lighter;
   background: -webkit-linear-gradient(left, #0228DD, #0670F3, #229DF9);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -474,7 +471,6 @@ footer .wiggle:hover {
   font-size: 1.7em;
   font-weight: lighter;
   background: -webkit-linear-gradient(left, #42963D, #7DC85D, #BEFF7F);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -746,7 +742,6 @@ footer .wiggle:hover {
 .note .fas {
   text-align: center;
   background: -webkit-linear-gradient(left, #F15861, #F78F6A);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -808,7 +803,6 @@ footer .wiggle:hover {
 .chic h2 {
   font-family: 'Croissant One';
   background: -webkit-linear-gradient(left, #C67412, #A56799, #6E4CCC);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-top: 6vh;
@@ -912,7 +906,6 @@ footer .wiggle:hover {
   padding-top: 7vh;
   margin-bottom: 5vh;
   background: -webkit-linear-gradient(left, #0228DD, #0670F3, #229DF9);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -995,7 +988,6 @@ footer .wiggle:hover {
   margin-top: 5vh;
   margin-bottom: 4vh;
   background: -webkit-linear-gradient(left, #42963D, #7DC85D, #BEFF7F);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -143,7 +143,6 @@ footer {
         & .fas {
             font-size: 2em;
             background: -webkit-linear-gradient(left, $clrnote-start, $clrnote-bot);
-            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -158,7 +157,6 @@ footer {
             font-size: 1.2em;
             font-weight: lighter;
             background: -webkit-linear-gradient(left, $clrm2-start, $clrm2-mid, $clrm2-end);
-            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -178,7 +176,6 @@ footer {
             font-size: 1.7em;
             font-weight: lighter;
             background: -webkit-linear-gradient(left, $clrm3-start, $clrm3-mid, $clrm3-end);
-            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -200,7 +197,6 @@ footer {
             font-size: 1.7em;
             font-weight: lighter;
             background: -webkit-linear-gradient(left, $clrm4-start, $clrm4-mid, $clrm4-end);
-            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -374,7 +370,6 @@ footer {
     .fas {
         text-align: center;
         background: -webkit-linear-gradient(left, $clrnote-start, $clrnote-bot);
-        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -438,7 +433,6 @@ footer {
     h2 {
         font-family: 'Croissant One';
         background: -webkit-linear-gradient(left, $clrm2-start, $clrm2-mid, $clrm2-end);
-        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         padding-top: 6vh;
@@ -543,7 +537,6 @@ footer {
         padding-top: 7vh;
         margin-bottom: 5vh;
         background: -webkit-linear-gradient(left, $clrm3-start, $clrm3-mid, $clrm3-end);
-        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -638,7 +631,6 @@ footer {
         margin-top: 5vh;
         margin-bottom: 4vh;
         background: -webkit-linear-gradient(left, $clrm4-start, $clrm4-mid, $clrm4-end);
-        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
