@@ -3,7 +3,7 @@
 @import "./partials/keyframes";
 @import "./partials/fonts";
 
-/* General */
+/* Général */
 * {
     margin: 0;
     padding: 0;
@@ -20,12 +20,13 @@ header {
     width: 100%;
     justify-content: center;
     background-color: $maincolor;
+    padding: 2.5vmin;
 
     h1 {
         color: $mainclrfont;
         font-family: 'Montserrat';
-        font-size: 4vmax;
-        font-weight: 600;
+        font-size: 3.5vmax;
+        font-weight: 700;
         letter-spacing: -0.06em;
     }
 }
@@ -39,7 +40,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 2vw;
-    left: 0;
     bottom: 0;
 
     a {
@@ -47,34 +47,47 @@ footer {
         color: $mainclrfont;
         font-weight: 600;
         font-family: 'Montserrat';
-        font-size: 2vh;
+        font-size: 2.5vmin;
     }
 
     /* Animation wiggle */
     .wiggle:hover {
-        animation: wiggle 80ms 3;
-        animation-timing-function: linear;
+        animation: wiggle 80ms linear 3;
     }
 }
 
 /*** Page d'accueil ***/
 /* Items  */
-.menu-word {
-    margin-top: 1vh;
-}
 
 .menu {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
-    width: 92%;
-    height: 90%;
+    justify-content: center;
     margin: auto;
-    padding: 1.5vw;
+    margin-top: 2vmin;
+    margin-bottom: 1.5vmin;
+
+    @include breakpoint(desktop) {
+        width: 70%;
+    }
+
+    @include breakpoint(big-desktop) {
+        width: 60%;
+    }
+}
+
+.menu-title {
+    margin-bottom: 1vmin;
 }
 
 .menu__item {
+    display: flex;
+    height: 440px;
+    width: 290px;
+    margin: 3vw;
+    box-shadow: 0 0 10px #a3a1a366;
+    overflow: hidden;
+
     @include breakpoint(phone) {
         a {
             font-size: 1em;
@@ -99,26 +112,14 @@ footer {
         }
     }
 
-    @include breakpoint(desktop) {
+    @include breakpoint(big-desktop) {
         height: 600px;
-        width: 450px;
+        width: 420px;
 
         a {
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
     }
-
-    @include breakpoint(big-desktop) {
-        height: 800px;
-        width: 550px;
-    }
-
-    display: flex;
-    height: 450px;
-    width: 300px;
-    margin: 3vw;
-    box-shadow: 0 0 10px #a3a1a366;
-    overflow: hidden;
 
     &--note {
         background-color: $colormenu1;
@@ -142,7 +143,6 @@ footer {
         & .fas {
             font-size: 2em;
             background: -webkit-linear-gradient(left, $clrnote-start, $clrnote-bot);
-            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -154,10 +154,9 @@ footer {
 
         & .menu-title {
             font-family: 'Croissant one', cursive, sans-serif;
-            font-size: 1.3em;
+            font-size: 1.2em;
             font-weight: lighter;
             background: -webkit-linear-gradient(left, $clrm2-start, $clrm2-mid, $clrm2-end);
-            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -174,10 +173,9 @@ footer {
 
         & .menu-title {
             font-family: 'Dancing Script', cursive, sans-serif;
-            font-size: 2em;
+            font-size: 1.7em;
             font-weight: lighter;
             background: -webkit-linear-gradient(left, $clrm3-start, $clrm3-mid, $clrm3-end);
-            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -196,10 +194,9 @@ footer {
 
         & .menu-title {
             font-family: 'Kaushan Script';
-            font-size: 2em;
+            font-size: 1.7em;
             font-weight: lighter;
             background: -webkit-linear-gradient(left, $clrm4-start, $clrm4-mid, $clrm4-end);
-            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -215,6 +212,19 @@ footer {
 
 /** Bouton "Prochainement" **/
 .button {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border-radius: 8px;
+    background-color: $maincolor;
+    margin-bottom: 11vh;
+
+    @include breakpoint(phone) {
+        width: 200px;
+        height: 40px;
+        margin-bottom: 7vh;
+    }
+
     @include breakpoint(tablet-portrait) {
         width: 230px;
         height: 45px;
@@ -222,32 +232,16 @@ footer {
 
     @include breakpoint(tablet-landscape) {
         width: 330px;
-        height: 60px;
+        height: 50px;
         margin-bottom: 10vh;
     }
 
-    @include breakpoint(desktop) {
-        width: 250px;
-        height: 50px;
-        margin-bottom: 12vh;
-    }
-
     @include breakpoint(big-desktop) {
-        width: 330px;
-        height: 60px;
+        width: 350px;
+        height: 65px;
     }
 
-    display: flex;
-    align-items: center;
-    border-radius: 8px;
-    background-color: $maincolor;
-    width: 200px;
-    height: 40px;
-    margin: auto;
-    margin-bottom: 7vh;
-    overflow: hidden;
-
-    & a {
+    a {
         color: $mainclrfont;
         text-align: center;
         font-size: 1.1em;
@@ -264,13 +258,13 @@ footer {
         }
 
         @include breakpoint(desktop) {
-            font-size: 1.4em;
-            margin-left: 1em;
+            font-size: 1.6em;
+            margin-left: 2em;
         }
 
         @include breakpoint(big-desktop) {
-            font-size: 1.7em;
-            margin-left: 1.8em;
+            font-size: 1.9em;
+            margin-left: 1.4em;
         }
     }
 
@@ -280,7 +274,7 @@ footer {
 
     /* Animation points de suspension */
     .loading:after {
-        animation: soon steps(1, end) 1s infinite;
+        animation: soon 1s infinite;
         content: '';
         font-weight: 900;
         font-size: 1.5em;
@@ -295,77 +289,111 @@ footer {
 .palette {
     @include boxmeal;
 
+    @include breakpoint(phone) {
+        width: 90vw;
+    }
+
     @include breakpoint(desktop) {
-        width: 70vw;
-        height: 100%;
+        width: 60vw;
+    }
+
+    @include breakpoint(big-desktop) {
+        width: 50vw;
     }
 }
 
-h4 {
+.restaurant {
     font-family: 'Montserrat';
     text-align: center;
     font-weight: 900;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     margin-top: 2vh;
     margin-bottom: 2vh;
+}
+
+/* Soulignement titres entrées/plats/desserts */
+.underline-h3 {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+    &:before {
+        content: '';
+        height: 3px;
+        width: 0;
+        transition: width 0s ease, background-color .5s ease;
+        position: absolute;
+        bottom: 0;
+    }
+
+    &:hover:before {
+        width: 100%;
+        transition: 1s ease;
+        background: linear-gradient(to left, rgb(239, 255, 146), #0af0be);
+    }
 }
 
 /** Menu 1 **/
 .note {
     background-color: $colormenu1;
 
-    h1 {
+    h2 {
         font-family: 'Devonshire';
         font-weight: 300;
-        margin-bottom: 3vh;
-        font-size: 6vmin;
+        margin-bottom: 4vh;
+        font-size: 3.5vmax;
     }
 
-    h2 {
+    h4 {
         text-align: center;
         font-family: 'Devonshire';
         font-weight: 300;
-        font-size: 4vmin;
-        margin-bottom: 2vh;
+        font-size: 2.5vmax;
+        padding-bottom: 2.5vh;
     }
 
     h3 {
-        font-weight: 900;
+        font-weight: 600;
         font-family: 'Segoe Print', sans-serif;
-        font-size: 3vmin;
-    }
+        font-size: 2.2vmin;
 
-    li {
-        margin-bottom: 1vh;
-        font-family: 'Segoe Print';
-        font-size: 2vmin;
+        @include breakpoint(phone) {
+            font-size: 4vmin;
+        }
     }
 
     .top.fas {
-        font-size: 9vmin;
-        margin-top: 4vh;
+        font-size: 7vmin;
+        padding-top: 5vh;
     }
 
     .fas {
         text-align: center;
         background: -webkit-linear-gradient(left, $clrnote-start, $clrnote-bot);
-        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     &_info {
-        margin-top: 1.5vh;
-        margin-bottom: 4vh;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+        font-family: 'Segoe Print';
+        font-size: 2vmin;
+        padding-left: 6vw;
+        padding-right: 6vw;
 
-        &--product {
-            padding-left: 4vw;
+        @include breakpoint(phone) {
+            font-size: 3.5vmin;
         }
+    }
 
-        &--price {
-            padding-right: 4vw;
-            font-weight: 900;
-        }
+    .product,
+    .price {
+        margin-bottom: 3vh;
+    }
+
+    .price {
+        font-weight: 900;
     }
 
     &_line-h3 {
@@ -374,12 +402,12 @@ h4 {
         &:after {
             content: '';
             position: relative;
-            width: 20vw;
+            width: 23%;
             height: 2vh;
         }
 
         &:before {
-            margin-left: 4vw;
+            margin-left: 6vw;
             background: #3d171d;
             background: -webkit-gradient(linear, left top, right top, from(#3d171d), to(#584727));
             background: linear-gradient(to right, #3d171d, #584727);
@@ -388,7 +416,7 @@ h4 {
         }
 
         &:after {
-            margin-right: 4vw;
+            margin-right: 6vw;
             background: #584727;
             background: -webkit-gradient(linear, left top, right top, from(#584727), to(#3d171d));
             background: linear-gradient(to right, #584727, #3d171d);
@@ -402,51 +430,54 @@ h4 {
 .chic {
     background-color: $colormenu2;
 
-    h1 {
+    h2 {
         font-family: 'Croissant One';
         background: -webkit-linear-gradient(left, $clrm2-start, $clrm2-mid, $clrm2-end);
-        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        padding-top: 6vh;
+        margin-bottom: 6vh;
         font-weight: 200;
         font-size: 3vmax;
     }
 
     h3 {
-        font-size: 2.5vmin;
+        font-size: 2.1vmin;
         font-weight: 600;
-    }
-
-    h3,
-    li {
         font-family: 'Roboto Slab';
+
+        @include breakpoint(phone) {
+            font-size: 3.2vmin;
+        }
     }
 
-    li {
-        font-size: 2vmin;
-        margin-bottom: 2vh;
+    &_info {
+        margin-bottom: 5vh;
+        padding-left: 7vw;
+        padding-right: 7vw;
+        font-family: 'Roboto Slab';
+        font-size: 1.9vmin;
+
+        @include breakpoint(phone) {
+            font-size: 3vmin;
+        }
     }
 
-    .info {
-        margin-bottom: 4vh;
-    }
-
-    .product {
-        padding-left: 10vw;
+    .product,
+    .price {
+        margin-top: 1.7vh;
+        margin-bottom: 1.7vh;
     }
 
     .price {
         font-weight: 900;
-        padding-right: 10vw;
     }
 
     .start {
         color: $clrm2-start;
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             background: $clrm2-start;
         }
     }
@@ -454,8 +485,8 @@ h4 {
     .mid {
         color: $clrm2-mid;
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             background: $clrm2-mid;
         }
 
@@ -464,123 +495,125 @@ h4 {
     .end {
         color: $clrm2-end;
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             background: $clrm2-end;
         }
     }
 
-    .line-h3 {
-        margin-bottom: 2em;
+    &_line-h3 {
+        margin-bottom: 3vh;
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             content: '';
             position: relative;
-            width: 20vw;
+            width: 25%;
             height: 3vh;
-
-            .line-h3 .start {
-                background: $clrm2-start;
-            }
         }
 
-        &::before {
-            margin-left: 2em;
+        &:before {
+            margin-left: 2vw;
             -webkit-clip-path: polygon(88% 22%, 100% 40%, 88% 55%, 0 43%);
             clip-path: polygon(88% 22%, 100% 40%, 88% 55%, 0 43%);
         }
 
-        &::after {
-            margin-right: 2em;
+        &:after {
+            margin-right: 2vw;
             -webkit-clip-path: polygon(9% 23%, 100% 39%, 9% 55%, 0% 38%);
             clip-path: polygon(9% 23%, 100% 39%, 9% 55%, 0% 38%);
         }
     }
 }
 
-.meal3 {
+/* Menu "Le délice des papilles" */
+.delice {
     background-color: $colormenu3;
 
-    h1 {
+    h2 {
         font-family: 'Dancing Script';
         font-weight: 300;
-        font-size: 4vmax;
-        margin-top: 5vh;
-        margin-bottom: 4vh;
+        font-size: 3.5vmax;
+        padding-top: 7vh;
+        margin-bottom: 5vh;
         background: -webkit-linear-gradient(left, $clrm3-start, $clrm3-mid, $clrm3-end);
-        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     h3 {
         font-family: 'Segoe Print';
-        font-size: 2.7vmin;
+        font-size: 2.2vmin;
         font-weight: 600;
+
+        @include breakpoint(phone) {
+            font-size: 3.8vmin;
+        }
     }
 
-    li {
+    &_info {
         font-family: 'Segoe Print';
         font-size: 2vmin;
-        margin-bottom: 2vh;
+        padding-left: 6vw;
+        padding-right: 6vw;
+        margin-top: 3vh;
+        margin-bottom: 1vh;
+
+        @include breakpoint(phone) {
+            font-size: 3.5vmin;
+        }
     }
 
-    .info {
-        margin-top: 4vh;
-        margin-bottom: 4vh;
-    }
-
-    .product {
-        margin-left: 7vw;
+    .product,
+    .price {
+        margin-bottom: 3vh;
     }
 
     .price {
-        margin-right: 7vw;
         font-weight: 900;
     }
 
     .start {
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             background: $clrm3-start;
         }
     }
 
     .mid {
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             background: $clrm3-mid;
         }
     }
 
     .end {
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             background: $clrm3-end;
         }
     }
 
-    .line-h3 {
+    &_line-h3 {
 
-        &::before,
-        &::after {
+        &:before,
+        &:after {
             content: '';
             position: relative;
-            width: 22vw;
+            width: 25%;
             height: 3vh;
         }
 
-        &::before {
+        &:before {
             margin-left: 3vw;
             -webkit-clip-path: polygon(94% 50%, 97% 62%, 3% 62%, 1% 37%, 11% 50%);
             clip-path: polygon(94% 50%, 97% 62%, 3% 62%, 1% 37%, 11% 50%);
         }
 
-        &::after {
+        &:after {
             margin-right: 3vw;
             -webkit-clip-path: polygon(100% 32%, 97% 62%, 3% 62%, 6% 48%, 87% 48%);
             clip-path: polygon(100% 32%, 97% 62%, 3% 62%, 6% 48%, 87% 48%);
@@ -588,59 +621,63 @@ h4 {
     }
 }
 
-.meal4 {
+.palette {
     background-color: $colormenu4;
 
-    h1 {
+    h2 {
         font-family: 'Kaushan Script';
-        font-weight: 300;
-        font-size: 4vmax;
+        font-weight: 200;
+        font-size: 3.5vmax;
         margin-top: 5vh;
         margin-bottom: 4vh;
         background: -webkit-linear-gradient(left, $clrm4-start, $clrm4-mid, $clrm4-end);
-        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     h3 {
         font-family: 'Segoe Print';
-        font-size: 2.7vmin;
+        font-size: 2.2vmin;
         font-weight: 600;
+
+        @include breakpoint(phone) {
+            font-size: 3.8vmin;
+        }
     }
 
-    li {
+    &_info {
         font-family: 'Segoe Print';
         font-size: 2vmin;
-        margin-bottom: 2vh;
+        padding-left: 6vw;
+        padding-right: 6vw;
+        margin-top: 3vh;
+
+        @include breakpoint(phone) {
+            font-size: 3.5vmin;
+        }
     }
 
-    .info {
-        margin-top: 4vh;
-        margin-bottom: 4vh;
-    }
-
-    .product {
-        margin-left: 7vw;
+    .product,
+    .price {
+        margin-bottom: 3vh;
     }
 
     .price {
-        margin-right: 7vw;
         font-weight: 900;
     }
 
-    .line-h3 {
+    &_line-h3 {
 
         &::before,
         &::after {
             content: '';
             position: relative;
-            width: 22vw;
+            width: 25%;
             height: 3vh;
         }
 
         &::before {
-            margin-left: 5vw;
+            margin-left: 4vw;
             background: #047717;
             background: linear-gradient(to right, $clrm4-start, $clrm4-mid, $clrm4-end);
             -webkit-clip-path: polygon(0 38%, 19% 45%, 41% 42%, 63% 44%, 83% 39%, 100% 41%, 100% 59%, 78% 52%, 66% 60%, 44% 59%, 21% 56%, 0 60%);
@@ -648,7 +685,7 @@ h4 {
         }
 
         &::after {
-            margin-right: 5vw;
+            margin-right: 4vw;
             background: #aef3be;
             background: linear-gradient(to right, $clrm4-end, $clrm4-mid, $clrm4-start);
             -webkit-clip-path: polygon(70% 51%, 36% 57%, 0 43%, 0 63%, 34% 73%, 80% 63%, 100% 72%, 100% 44%);
@@ -705,7 +742,7 @@ h4 {
     margin: auto;
     margin-top: 4vh;
     margin-bottom: 10vh;
-    width: 85vw;
+    width: 80vw;
     height: 100%;
     overflow: hidden;
     background-color: rgb(247, 242, 235);
@@ -718,14 +755,14 @@ h4 {
     }
 
     h2 {
-        font-size: 4.5vmin;
-    }
-
-    h3 {
         font-size: 4vmin;
     }
 
-    p {
+    h3 {
         font-size: 3vmin;
+    }
+
+    p {
+        font-size: 2.8vmin;
     }
 }
